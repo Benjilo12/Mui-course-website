@@ -54,6 +54,29 @@ const theme = createTheme({
       },
     },
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          background: "#673F86",
+          borderRadius: "8px",
+          padding: "14px",
+          fontWeight: 500,
+          fontSize: "20px",
+          lineHeight: "24px",
+          textTransform: "capitalize",
+          color: "#FFFFFF",
+          "&:disabled": {
+            background: "#9980B7",
+            color: "#FFFFFF",
+          },
+          "&:hover": {
+            background: "#673F86",
+          },
+        },
+      },
+    },
+  },
 });
 
 export default theme;

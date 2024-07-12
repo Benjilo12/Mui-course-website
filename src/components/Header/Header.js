@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
+import Tooltip from "@mui/material/Tooltip";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Navbar from "../Navbar/Navbar";
@@ -15,7 +15,6 @@ import logo_mob from "../../assets/logo-mobile.svg";
 import shopping_cart from "../../assets/shopping-cart.svg";
 import user_info from "../../assets/user-info.svg";
 import { useState } from "react";
-import { Padding } from "@mui/icons-material";
 
 const styles = {
   appBar: (theme) => ({
@@ -76,12 +75,16 @@ function Header() {
           </Box>
           <SearchInput />
           <Box sx={{ display: "flex" }}>
-            <IconButton>
-              <Box component="img" src={shopping_cart} />
-            </IconButton>
-            <IconButton sx={{ display: { xs: "none", lg: "block" } }}>
-              <Box component="img" src={user_info} />
-            </IconButton>
+            <Tooltip title="cart">
+              <IconButton>
+                <Box component="img" src={shopping_cart} />
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="user">
+              <IconButton sx={{ display: { xs: "none", lg: "block" } }}>
+                <Box component="img" src={user_info} />
+              </IconButton>
+            </Tooltip>
           </Box>
         </Toolbar>
       </Container>
