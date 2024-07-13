@@ -1,3 +1,5 @@
+import FeaturedCard from "./components/FeaturedCards/FeaturedCard";
+import FeaturedCourses from "./components/FeaturedCourses/FeaturedCourses";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 
@@ -6,6 +8,8 @@ const App = () => {
     <>
       <Header />
       <Hero />
+      <FeaturedCourses />
+      <FeaturedCard />
     </>
   );
 };

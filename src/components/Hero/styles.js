@@ -17,6 +17,12 @@ const styles = {
       background: `url(${banner_bg_mob}) no-repeat`,
       backgroundSize: "cover",
       [theme.breakpoints.up("lg")]: {
+        background: `url(${banner_bg}) no-repeat,url(${banner_circle_bg}) no-repeat`,
+        height: "990px",
+        maxHeight: "990px",
+        backgroundSize: "cover",
+      },
+      [theme.breakpoints.up("sm")]: {
         background: `url(${banner_bg} no-repeat)`,
         height: "1500px",
         maxHeight: "1500px",
