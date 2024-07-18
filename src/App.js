@@ -1,20 +1,16 @@
-import Become from "./components/Become/Become";
-import Benefits from "./components/Benefits/Benefits";
-import FeaturedCard from "./components/FeaturedCards/FeaturedCard";
-import FeaturedCourses from "./components/FeaturedCourses/FeaturedCourses";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
+import Layout from "./components/Layout/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeScreen from "./components/Screens/HomeScreen";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Hero />
-      <FeaturedCourses />
-      <FeaturedCard />
-      <Benefits />
-      <Become />
-    </>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route index element={<HomeScreen />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 };
 

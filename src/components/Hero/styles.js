@@ -23,7 +23,7 @@ const styles = {
         backgroundSize: "cover",
       },
       [theme.breakpoints.up("sm")]: {
-        background: `url(${banner_bg} no-repeat)`,
+        background: `url(${banner_bg}) no-repeat`,
         height: "1500px",
         maxHeight: "1500px",
         backgroundSize: "cover",
@@ -62,7 +62,6 @@ const styles = {
   }),
   text: (theme) => ({
     color: "#fff",
-    fontWeight: 400,
     fontSize: "14px",
     lineHeight: "17px",
     mt: "48px",
@@ -160,4 +159,5 @@ const styles = {
     fontWeight: 500,
   },
 };
+
 export default styles;
