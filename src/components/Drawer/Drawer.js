@@ -19,7 +19,7 @@ function Drawer({ open, onClose }) {
           <Box component="img" src={close} />
         </IconButton>
       </Box>
-      <Box sx={{ mt: "24px" }}>
+      <Box sx={{ m: "24px" }}>
         <Navbar />
       </Box>
     </MuiDrawer>
